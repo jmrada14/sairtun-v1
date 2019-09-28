@@ -23,10 +23,10 @@ const MarkerHeader = styled.h3`
   border-radius: 1em 0 1em 0;
   margin-bottom: 10px;
   background-image: linear-gradient(
-    -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
-    rgba(255, 250, 150, 0.25)
+    -10deg,
+    rgb(107, 199, 122),
+    rgb(107, 199, 122) 100%,
+    rgb(107, 199, 122)
   );
 `
 

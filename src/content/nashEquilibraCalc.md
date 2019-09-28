@@ -160,7 +160,7 @@ touch index.html main.js style.css
      </div>
      <script src='main.js'></script>
      </body>
-     </html>
+     </html>  
 ```
 
 ###the result :

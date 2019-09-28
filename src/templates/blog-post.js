@@ -14,10 +14,10 @@ const MarkedHeader = styled.h1`
   display: inline;
   border-radius: 1em 0 1em 0;
   background-image: linear-gradient(
-    -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
-    rgba(255, 250, 150, 0.25)
+    -10deg,
+    rgb(107, 199, 122),
+    rgb(107, 199, 122) 100%,
+    rgb(107, 199, 122)
   );
 `
 
@@ -41,7 +41,7 @@ const MarkdownContent = styled.div`
     right: -0.1px;
     bottom: 0;
     transition: top 0.1s ease-in-out;
-    background-color: rgba(255, 250, 150, 0.8);
+    background-color: rgb(107, 199, 122);
   }
   a:hover::after {
     top: 0;

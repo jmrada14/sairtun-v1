@@ -5,6 +5,7 @@ import styled from "@emotion/styled"
 
 const Container = styled.div`
   text-align: center;
+
 `
 
 const OuterContainer = styled.div`
@@ -13,6 +14,7 @@ const OuterContainer = styled.div`
   justify-content: center;
   flex-direction: row;
   height: 78vh;
+  border-radius: 40px;
 `
 
 const Description = styled.p`
