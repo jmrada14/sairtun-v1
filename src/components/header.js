@@ -7,10 +7,11 @@ const Content = styled.div`
   max-width: 860px;
   padding: 1rem 1.0875rem;
   font-size: 1.2rem;
+    color: #615e5a;  
 `
 
 const NavLink = styled(Link)`
-  color: black;
+  color: #615e5a;  
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -34,7 +35,7 @@ const NavLink = styled(Link)`
 `
 
 const GitHubLink = styled.a`
-  color: black;
+  color: #615e5a;  
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -59,6 +60,7 @@ const GitHubLink = styled.a`
 
 const HomeLink = styled(NavLink)`
   margin-left: 0;
+  color: #615e5a;  
 `
 
 const SiteHeader = styled.header`
@@ -78,14 +80,14 @@ const Header = ({ siteTitle }) => (
         </p>
       </Content>
     </SiteHeader>
-)
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
 export default Header
