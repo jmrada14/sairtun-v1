@@ -9,7 +9,7 @@ path: "/blog/helloworld"
 
 ###About me
 I'm a Software Developer and Economist from Venezuela.
-Currently I build programs using the Node, Ruby, and R for Data Analysis/Manipulation.
+Currently I build programs using Node, Ruby, and R for Data Analysis/Manipulation.
 ###Interests 
 - I found Game Theory pretty interesting, in fact I've been studying non-cooperative games for a "long" time.
 
