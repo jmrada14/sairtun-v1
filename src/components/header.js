@@ -34,7 +34,7 @@ const NavLink = styled(Link)`
   }
 `
 
-const GitHubLink = styled.a`
+const PortfolioLink = styled.a`
   color: #615e5a;  
   margin-left: 15px;
   text-decoration: none;
@@ -75,8 +75,8 @@ const Header = ({ siteTitle }) => (
       <Content>
         <p>
           <HomeLink to="/">{siteTitle}</HomeLink>
+            <PortfolioLink href="#">Works </PortfolioLink>
           <NavLink to="/blog">Blog</NavLink>
-          <GitHubLink href="https://github.com/jmrada14">GitHub</GitHubLink>
         </p>
       </Content>
     </SiteHeader>
