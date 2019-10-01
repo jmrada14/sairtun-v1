@@ -86,7 +86,7 @@ const Layout = ({ children }) => (
                 <Content>
                     <main>{children}</main>
                     <Footer>
-                        <GitHubLink href="https://github.com/jmrada14">GitHub</GitHubLink>  <ResumeLink href="#">Resume</ResumeLink>
+                        <GitHubLink href="https://github.com/jmrada14" target="_blank">GitHub</GitHubLink>  <ResumeLink href="https://drive.google.com/file/d/13EPXl9PTfIRipllq7yTa1CKOOdRjeIVu/view?usp=sharing" target="_blank">Resume</ResumeLink>
                     </Footer>
                 </Content>
             </>
