@@ -34,29 +34,6 @@ const NavLink = styled(Link)`
   }
 `
 
-const PortfolioLink = styled.a`
-  color: #615e5a;  
-  margin-left: 15px;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  ::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color:  rgb(107, 199, 122);
-    transform-origin: bottom right;
-    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-  }
-  :hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-`
 
 const HomeLink = styled(NavLink)`
   margin-left: 0;
@@ -75,8 +52,7 @@ const Header = ({ siteTitle }) => (
       <Content>
         <p>
           <HomeLink to="/">{siteTitle}</HomeLink>
-            <PortfolioLink href="#">Works </PortfolioLink>
-          <NavLink to="/blog">Blog</NavLink>
+            <NavLink to="/blog">Blog & Works</NavLink>
         </p>
       </Content>
     </SiteHeader>
