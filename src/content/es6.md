@@ -321,7 +321,7 @@ console.log(arr); // [3, 4, 5, 7]
 ## JavaScript Objects
 
 ```javascript
-var cat = {
+let cat = {
   name: "Whiskers",
   legs: 4,
   tails: 1,
@@ -334,19 +334,19 @@ var cat = {
 Accessing with dot (`.`) notation
 
 ```javascript
-var myObj = {
+let myObj = {
   prop1: "val1",
   prop2: "val2"
 };
 
-var prop1val = myObj.prop1; // val1
-var prop2val = myObj.prop2; // val2
+let prop1val = myObj.prop1; // val1
+let prop2val = myObj.prop2; // val2
 ```
 
 Accessing with bracket (`[]`) notation
 
 ```javascript
-var myObj = {
+let myObj = {
   "Space Name": "Kirk",
   "More Space": "Spock",
   NoSpace: "USS Enterprise"
@@ -360,14 +360,14 @@ myObj["NoSpace"]; // USS Enterprise
 Accessing with variables
 
 ```javascript
-var dogs = {
+let dogs = {
   Fido: "Mutt",
   Hunter: "Doberman",
   Snoopie: "Beagle"
 };
 
-var myDog = "Hunter";
-var myBreed = dogs[myDog];
+let myDog = "Hunter";
+let myBreed = dogs[myDog];
 console.log(myBreed); // "Doberman"
 ```
 
@@ -423,7 +423,7 @@ function getArrayOfUsers(obj) {
 
 ```javascript
 // Updating object properties
-var ourDog = {
+let ourDog = {
   name: "Camper",
   legs: 4,
   tails: 1,
@@ -444,7 +444,7 @@ delete ourDog.bark;
 ### Objects for Lookups
 
 ```javascript
-var alpha = {
+let alpha = {
   1:"Z",
   2:"Y",
   3:"X",
@@ -457,14 +457,14 @@ var alpha = {
 alpha[2]; // "Y"
 alpha[24]; // "C"
 
-var value = 2;
+let value = 2;
 alpha[value]; // "Y"
 ```
 
 ### Test Object Properties
 
 ```javascript
-var myObj = {
+let myObj = {
   top: "hat",
   bottom: "pants"
 };
@@ -476,7 +476,7 @@ myObj.hasOwnProperty("middle"); // false
 ### Accessing Nested Objects
 
 ```javascript
-var ourStorage = {
+let ourStorage = {
   desk: {
     drawer: "stapler"
   },
@@ -497,10 +497,10 @@ ourStorage.desk.drawer; // "stapler"
 
 ```javascript
 // Consider the following ES5 code
-var voxel = { x: 3.6, y: 7.4, z: 6.54 };
-var x = voxel.x; // x = 3.6
-var y = voxel.y; // y = 7.4
-var z = voxel.z; // z = 6.54
+let voxel = { x: 3.6, y: 7.4, z: 6.54 };
+let x = voxel.x; // x = 3.6
+let y = voxel.y; // y = 7.4
+let z = voxel.z; // z = 6.54
 
 // the same assignment statement with ES6 destructuring syntax
 const { x, y, z } = voxel; // x = 3.6, y = 7.4, z = 6.54
@@ -696,8 +696,8 @@ switch (val) {
 ## While Loops
 
 ```javascript
-var ourArray = [];
-var i = 0;
+let ourArray = [];
+let i = 0;
 while (i < 5) {
   ourArray.push(i);
   i++;
@@ -707,8 +707,8 @@ while (i < 5) {
 ### Do...While Loops
 
 ```javascript
-var ourArray = [];
-var i = 0;
+let vourArray = [];
+let i = 0;
 do {
   ourArray.push(i);
   i++;
@@ -718,29 +718,29 @@ do {
 ## For Loops
 
 ```javascript
-var ourArray = [];
-var i = 0;
+let ourArray = [];
+let i = 0;
 while (i < 5) {
   ourArray.push(i);
   i++;
 }
 
 // Count Backwards With a For Loop
-var ourArray = [];
+let ourArray = [];
 for (var i = 10; i > 0; i -= 2) {
   ourArray.push(i);
 }
 
 // Iterate Through an Array
-var arr = [10, 9, 8, 7, 6];
-for (var i = 0; i < arr.length; i++) {
+let arr = [10, 9, 8, 7, 6];
+for (let i = 0; i < arr.length; i++) {
   console.log(arr[i]);
 }
 
 // Nested for loops
-var arr = [[1, 2], [3, 4], [5, 6]];
-for (var i = 0; i < arr.length; i++) {
-  for (var j = 0; j < arr[i].length; j++) {
+let arr = [[1, 2], [3, 4], [5, 6]];
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr[i].length; j++) {
     console.log(arr[i][j]);
   }
 }
@@ -779,7 +779,7 @@ ourFunctionWithArgs(10, 5); // 5
 function plusThree(num) {
   return num + 3;
 }
-var answer = plusThree(5); // 8
+let answer = plusThree(5); // 8
 ```
 
 ### Immediately Invoked Function Expression or IIFE
