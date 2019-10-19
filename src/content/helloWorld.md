@@ -1,6 +1,6 @@
 ---
 title: "Hello World"
-date: "2019-09-17"
+date: "1900-01-01"
 draft: false
 path: "/blog/helloworld"
 ---
@@ -13,7 +13,7 @@ Currently I build programs using Node, Ruby, and R for Data Analysis/Manipulatio
 ###Interests 
 - I found Game Theory pretty interesting, in fact I've been studying non-cooperative games for a "long" time.
 
-- I am passionate about software development, I think it is one great way to help society if used wisely. 
+- I am passionate about software development, I think it is a great way to help society if used wisely. 
 
 - I am an InfoSec and 'Cypherpunk' enthusiast, I found cryptography and penetration testing really interesting.
 

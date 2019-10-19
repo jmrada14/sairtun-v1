@@ -39,9 +39,9 @@ const ReadingTime = styled.h5`
 const IndexPage = ({ data }) => {
     return (
         <Layout>
-            <SEO title="Blog" />
+            <SEO title="Blog-works" />
             <Content>
-                <h1>Blog</h1>
+                <h1>Blog & Works</h1>
                 {data.allMarkdownRemark.edges.map(({ node }) => (
                     <div key={node.id}>
                         <Link

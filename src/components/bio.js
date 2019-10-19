@@ -52,7 +52,7 @@ const Bio = () => (
                     <NameHeader>{data.site.siteMetadata.title}</NameHeader>
                     <br></br>
                     <HelloThere> Hello there! </HelloThere>
-                    <Description>  <br></br>—  I'm a Software Developer with interests in Cryptography, Economic systems, and much more. My goal is to build free, efficient, and secure software to help society.</Description>
+                    <Description>  <br></br>—  I'm Juan, a Software Developer with interests in Cryptography, Economic systems, and much more. My goal is to build free, efficient, and secure software to help society.</Description>
                 </Container>
             </OuterContainer>
         )}
