@@ -1,7 +1,24 @@
-import React from "react";
+import React, {Component} from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import styled from "@emotion/styled";
+import Typist from 'react-typist';
+import 'babel-polyfill'
+
+
+// class AutoText extends Component {
+//
+//     render() {
+//         return (
+//             <Typist>
+//                     <Typist.Backspace count={0} delay={1} />
+//                      —  I'm Juan, a Software Developer with interests in Cryptography, Economic systems, and much more. My goal is to build free, efficient, and secure software to help society.
+//             </Typist>
+//         );
+//     }
+// }
+
+
 const Container = styled.div`
   text-align: center;
 
@@ -50,9 +67,13 @@ const Bio = () => (
             <OuterContainer>
                 <Container>
                     <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-                    <br></br>
+                    <br/>
+                    {/*<AutoText/>*/}
                     <HelloThere> Hello there! </HelloThere>
-                    <Description>  <br></br>—  I'm Juan, a Software Developer with interests in Cryptography, Economic systems, and much more. My goal is to build free, efficient, and secure software to help society.</Description>
+                    <Description>  <br/>
+                        —  I'm Juan, a Software Developer with interests in Cryptography, Economic systems, and much more. My goal is to build free, efficient, and secure software to help society.
+                    {/*<AutoText/>*/}
+                    </Description>
                 </Container>
             </OuterContainer>
         )}

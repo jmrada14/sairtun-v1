@@ -7,6 +7,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.11",
+    "babel-polyfill": "^6.26.0",
     "gatsby": "^2.8.5",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-emotion": "^4.0.7",
@@ -28,6 +29,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-typist": "^2.0.5",
     "typeface-nunito": "0.0.72"
   },
   "devDependencies": {

@@ -7,20 +7,7 @@ path: "/blog/gitcs"
 
 
 Git Cheat Sheet 
-===============
-### Index
-* [Set Up](#setup)
-* [Configuration Files](#configuration-files)
-* [Create](#create)
-* [Local Changes](#local-changes)
-* [Search](#search)
-* [Commit History](#commit-history)
-* [Branches & Tags](#branches--tags)
-* [Update & Publish](#update--publish)
-* [Merge & Rebase](#merge--rebase)
-* [Undo](#undo)
-
-
+==============
 <hr>
 
 ## Setup
