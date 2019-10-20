@@ -61,7 +61,8 @@ touch index.html main.js style.css
 ```
  * Building our HTML file :
  
- ``` <html lang="en">
+ ``` 
+<html lang="en">
      
      <head>
          <title>Nash Equilibrium</title>
