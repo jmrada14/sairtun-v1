@@ -2,7 +2,7 @@
 title: "Encrypted chat UCF Bootcamp project"
 date: "2019-10-23"
 draft: false
-path: "/blog/project1"
+path: "/blog/project2"
 ---
 
 ### Overview 
