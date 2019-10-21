@@ -162,6 +162,7 @@ touch index.html main.js style.css
      <script src='main.js'></script>
      </body>
      </html>  
+
 ```
 
 ###the result :
