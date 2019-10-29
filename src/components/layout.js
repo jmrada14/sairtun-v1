@@ -18,31 +18,10 @@ const Content = styled.div`
   padding: 0 1.0875rem 1rem;
   padding-top: 0;
 `
-const GitHubLink = styled.a`
-  color: #615e5a;  
-  margin-left: 15px;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  ::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color:  rgb(107, 199, 122);
-    transform-origin: bottom right;
-    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-  }
-  :hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-`
+
 const ResumeLink = styled.a`
-  color: #615e5a;  
+  color: #615e5a;
+  font-size: 1.5rem;
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -86,7 +65,7 @@ const Layout = ({ children }) => (
                 <Content>
                     <main>{children}</main>
                     <Footer>
-                        <GitHubLink href="https://github.com/jmrada14" target="_blank">GitHub</GitHubLink>  <ResumeLink href="https://drive.google.com/file/d/13EPXl9PTfIRipllq7yTa1CKOOdRjeIVu/view?usp=sharing" target="_blank">Resume</ResumeLink>
+                        <ResumeLink href="https://drive.google.com/file/d/13EPXl9PTfIRipllq7yTa1CKOOdRjeIVu/view?usp=sharing" target="_blank">Resume</ResumeLink>
                     </Footer>
                 </Content>
             </>

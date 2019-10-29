@@ -29,6 +29,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-icons": "^3.8.0",
     "react-typist": "^2.0.5",
     "typeface-nunito": "0.0.72"
   },

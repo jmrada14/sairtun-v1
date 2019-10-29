@@ -1,23 +1,35 @@
 import React, {Component} from "react";
 import PropTypes from "prop-types";
-import { StaticQuery, graphql } from "gatsby";
+import {StaticQuery, graphql, Link} from "gatsby";
 import styled from "@emotion/styled";
-import Typist from 'react-typist';
+import { DiGithubBadge, DiRuby, DiNodejsSmall, DiMongodb, DiRor, DiLaravel, DiReact,DiMysql } from "react-icons/di"
+import { FaStackOverflow, FaDev, FaLinkedin, FaServer } from "react-icons/fa"
+
 import 'babel-polyfill'
 
-
-// class AutoText extends Component {
-//
-//     render() {
-//         return (
-//             <Typist>
-//                     <Typist.Backspace count={0} delay={1} />
-//                      —  I'm Juan, a Software Developer with interests in Cryptography, Economic systems, and much more. My goal is to build free, efficient, and secure software to help society.
-//             </Typist>
-//         );
-//     }
-// }
-
+const Linky = styled(Link)`
+  color: #615e5a;  
+  margin-left: 15px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  ::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:  rgb(107, 199, 122);
+    transform-origin: bottom right;
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  :hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+`
 
 const Container = styled.div`
   text-align: center;
@@ -67,12 +79,18 @@ const Bio = () => (
             <OuterContainer>
                 <Container>
                     <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-                    <br/>
-                    {/*<AutoText/>*/}
-                    <HelloThere> Hello there! </HelloThere>
+                    <br/><HelloThere> Hello there! </HelloThere>
                     <Description>  <br/>
-                        —  I'm Juan, a Software Developer with interests in Cryptography, Economic systems, and much more. My goal is to build free, efficient, and secure software to help society.
-                    {/*<AutoText/>*/}
+                        —  I'm Juan, a Full Stack Developer who focuses on writing secure, clean, and efficient code to help society.
+                        <br/><br/>
+                           I have experience with Ruby <DiRuby/>, ES6 <DiNodejsSmall/>, R, and several libraries & frameworks including: Ruby on Rails <DiRor/>, ExpressJS <FaServer/>, Laravel <DiLaravel/>, React <DiReact/>, Mongoose <DiMongodb/>, Sequelize <DiMysql/>, Ggplot2, and much more.<br/>
+                           <br/>
+                           Check out my networks:<br/>
+
+                        <Linky href="https://github.com/jmrada14" target="_blank"><DiGithubBadge/></Linky>
+                        <Linky href="https://stackoverflow.com/users/11632596/sairtun?tab=profile" target="_blank"><FaStackOverflow/></Linky>
+                        <Linky href="https://dev.to/jmrada14" target="_blank"><FaDev/></Linky>
+                        <Linky href="https://www.linkedin.com/in/juan-rada-4b997b190/" target="_blank"><FaLinkedin/></Linky>
                     </Description>
                 </Container>
             </OuterContainer>
