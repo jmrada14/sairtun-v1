@@ -87,10 +87,10 @@ const Bio = () => (
                            <br/>
                            Check out my networks:<br/>
 
-                        <Linky href="https://github.com/jmrada14" target="_blank"><DiGithubBadge/></Linky>
-                        <Linky href="https://stackoverflow.com/users/11632596/sairtun?tab=profile" target="_blank"><FaStackOverflow/></Linky>
-                        <Linky href="https://dev.to/jmrada14" target="_blank"><FaDev/></Linky>
-                        <Linky href="https://www.linkedin.com/in/juan-rada-4b997b190/" target="_blank"><FaLinkedin/></Linky>
+                        <Linky href="https://github.com/jmrada14" target="_blank"> <DiGithubBadge/> </Linky>
+                        <Linky href="https://stackoverflow.com/users/11632596/sairtun?tab=profile" target="_blank"> <FaStackOverflow/> </Linky>
+                        <Linky href="https://dev.to/jmrada14" target="_blank"> <FaDev/> </Linky>
+                        <Linky href="https://www.linkedin.com/in/juan-rada-4b997b190/" target="_blank"> <FaLinkedin/> </Linky>
                     </Description>
                 </Container>
             </OuterContainer>
