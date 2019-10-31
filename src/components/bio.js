@@ -7,7 +7,7 @@ import { FaStackOverflow, FaDev, FaLinkedin, FaServer } from "react-icons/fa"
 
 import 'babel-polyfill'
 
-const Linky = styled(Link)`
+const Linky = styled.a`
   color: #615e5a;  
   margin-left: 15px;
   text-decoration: none;
