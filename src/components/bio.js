@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import PropTypes from "prop-types";
-import {StaticQuery, graphql, Link} from "gatsby";
+import {StaticQuery, graphql } from "gatsby";
 import styled from "@emotion/styled";
 import { DiGithubBadge, DiRuby, DiNodejsSmall, DiMongodb, DiRor, DiLaravel, DiReact,DiMysql } from "react-icons/di"
 import { FaStackOverflow, FaDev, FaLinkedin, FaServer } from "react-icons/fa"
