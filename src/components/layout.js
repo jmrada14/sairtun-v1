@@ -64,6 +64,7 @@ const Layout = ({ children }) => (
                 <Header siteTitle={data.site.siteMetadata.title} />
                 <Content>
                     <main>{children}</main>
+                    <br/>
                     <Footer>
                         <ResumeLink href="https://drive.google.com/file/d/13EPXl9PTfIRipllq7yTa1CKOOdRjeIVu/view?usp=sharing" target="_blank">Resume</ResumeLink>
                     </Footer>

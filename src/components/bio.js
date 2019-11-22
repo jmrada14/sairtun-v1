@@ -33,11 +33,13 @@ const Linky = styled.a`
 
 const Container = styled.div`
   text-align: center;
+  
 
 `;
 
 const OuterContainer = styled.div`
   display: flex;
+  // background-color: #fafafa;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -79,7 +81,8 @@ const Bio = () => (
             <OuterContainer>
                 <Container>
                     <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-                    <br/><HelloThere> Hello there! </HelloThere>
+                    <br/>
+                    <HelloThere> Hello there! </HelloThere>
                     <Description>  <br/>
                         —  I'm Juan, a Full Stack Developer who focuses on writing secure, clean, and efficient code to help society.
                         <br/><br/>
