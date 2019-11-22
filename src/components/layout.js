@@ -66,7 +66,7 @@ const Layout = ({ children }) => (
                     <main>{children}</main>
                     <br/>
                     <Footer>
-                        <ResumeLink href="https://drive.google.com/file/d/13EPXl9PTfIRipllq7yTa1CKOOdRjeIVu/view?usp=sharing" target="_blank">Resume</ResumeLink>
+                        <ResumeLink href="https://drive.google.com/file/d/1xdhdC60Jw8ndy5PLX1Uy_QFF8j8nayY0/view?usp=sharing" target="_blank">Resume</ResumeLink>
                     </Footer>
                 </Content>
             </>
