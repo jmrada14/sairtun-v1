@@ -52,129 +52,11 @@ This paradox is widely known in modern game theory, and occurs in certain aspect
  ![prisioner's Dilemma](https://static-ssl.businessinsider.com/image/5756c8da9105841d008c7255-960/prisoner's-dilemma.png)
  
  Lets build a Nash equilibrium calculator:
- 
- * Go to terminal and do :
- ```
-mkdir nash-eq-calc 
-cd nash-eq-calc 
-touch index.html main.js style.css
-```
- * Building our HTML file :
- 
- ``` 
-<html lang="en">
-     
-     <head>
-         <title>Nash Equilibrium</title>
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-         <link rel='stylesheet' href='style.css'>
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-     
-     </head>
-     
-     <body>
-     
-     <div class="jumbotron text-center col-12">
-         <h1> Nash equilibrium calculator </h1>
-         <h3>just for N = 2</h3>
-     </div>
-     <div class="container">
-         <div class="row">
-             <div class="col-12" id = "config">
-                 <h2>Data:</h2>
-     
-                 <form action="javascript:getFormValues()" id = "form">
-                     <div class="dataCalc col-12 col-6">
-                         <h3>Player 1:</h3>
-                     </div>
-                     <div class=dataCalc col-xs-12 col-sm-6">
-                     <h3> (Player 1 , Player 2):</h3>
-             </div>
-             <div class=dataCalc col-12 col-6">
-             <label>Action 1: </label><br>
-             <input class="form-control" type="text" id="Player1Action1">
-         </div>
-         <div class=dataCalc col-12 col-3">
-         <label class = "matrixval">(Action 1, Action 1): </label><br>
-         <input class="form-control" type="number"  id="Player1Val11">
-     </div>
-     <div class=dataCalc col-12 col-3">
-     <label class = "matrixval">(Action 1, Action 2): </label><br>
-     <input class="form-control" type="number"  id="Player1Val12">
-     </div>
-     
-     <div class=dataCalc col-12 col-6">
-     <label>Action 2: </label><br>
-     <input class="form-control" type="text" id="Player1Action2">
-     </div>
-     <div class=dataCalc col-12 col-3">
-     <label class = "matrixval">(Action 2, Action 1): </label><br>
-     <input class="form-control" type="number"  id="Player1Val21">
-     </div>
-     <div class=dataCalc col-12 col-3">
-     <label class = "matrixval">(Action 2, Action 2): </label><br>
-     <input class="form-control" type="number"  id="Player1Val22">
-     </div>
-     <div class=dataCalc col-12 col-6">
-     <h3>Player 2:</h3>
-     </div>
-     
-     <div class=dataCalc col-12 col-6">
-     <h3> - </h3>
-     </div>
-     
-     <div class=dataCalc col-12 col-6">
-     <label>Action 1: </label><br>
-     <input class="form-control" type="text" id="Player2Action1">
-     </div>
-     <div class=dataCalc col-12 col-3">
-     <label class = "matrixval">(Action 1, Action 1): </label><br>
-     <input class="form-control" type="number"  id="Player2Val11">
-     </div>
-     <div class=dataCalc col-12 col-3">
-     <label class = "matrixval">(Action 2, Action 1): </label><br>
-     <input class="form-control" type="number"  id="Player2Val21">
-     </div>
-     
-     <div class=dataCalc col-12 col-6">
-     <label>Action 2: </label><br>
-     <input class="form-control" type="text" id="Player2Action2">
-     </div>
-     <div class=dataCalc col-12 col-3">
-     <label class = "matrixval">(Action 1, Action 2): </label><br>
-     <input class="form-control" type="number"  id="Player2Val12">
-     </div>
-     <div class=dataCalc col-12 col-3">
-     <label class = "matrixval">(Action 2, Action 2): </label><br>
-     <input class="form-control" type="number"  id="Player2Val22">
-     </div>
-     <div class=dataCalc col-12 col-6">
-     <button type="submit" class="btn btn-secondarydataCalc">solve</button>
-     </div>
-     </form>
-     </div>
-     
-     <div class="col-12" id = 'result'>
-     </div>
-     </div>
-     </div>
-     <script src='main.js'></script>
-     </body>
-     </html>  
-
-```
-
-###the result :
-
-![index.htl](htmlFile.png)
-
-Now let's customize the style and adjust it :
-
-#TO BE DONE
 
 
-* now let's design our calculator, bellow we have the algorithm to be used
+
+
+Let's design our calculator, bellow we have the algorithm to be used
 
 ```Algorithm 1
 
@@ -198,15 +80,9 @@ Return the found NE p
 
 
 This said, the actual mechanics of finding equilibrium cells can be done the following way : find the maximum of a column and check if the second member of the pair is the maximum of the row. If these conditions are met, the cell represents a Nash equilibrium. Check all columns this way to find all `NE` cells. An `N×N` matrix may have between `0` and `N×N` pure-strategy Nash equilibrium
+~~~~
 
 
-
-* function equilibriumEquation :
-
-```
-function equilibriumEquation(aliceP, bobP, n)
-
-```
 #STILL IN DEVELOPMENT
 
 
