@@ -57,7 +57,8 @@ const Description = styled.p`
 const NameHeader = styled.h1`
   font-size: 4.5rem;
   margin-bottom: 0;
-  color: #eba134;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  color: transparent;
 `;
 const HelloThere = styled.p`
   padding: 0;
@@ -86,7 +87,9 @@ const Bio = () => (
                     <Description>  <br/>
                         —  I'm Juan, a Full Stack Developer who focuses on writing secure, clean, and efficient code to help society.
                         <br/><br/>
-                           I have experience with Ruby <DiRuby/>, ES6 <DiNodejsSmall/>, R, and several libraries & frameworks including: Ruby on Rails <DiRor/>, ExpressJS <FaServer/>, Laravel <DiLaravel/>, React <DiReact/>, Mongoose <DiMongodb/>, Sequelize <DiMysql/>, Ggplot2, Heroku, and much more.<br/>
+                        I have experience with Ruby <DiRuby/>, ES6 <DiNodejsSmall/>, R, and several libraries & frameworks
+                        including: Ruby on Rails <DiRor/>, ExpressJS <FaServer/>, Laravel <DiLaravel/>, React <DiReact/>,
+                        Mongoose <DiMongodb/>, Sequelize <DiMysql/>, Ggplot2, Heroku, and much more.<br/>
                            <br/>
                            Check out my networks:<br/>
 
