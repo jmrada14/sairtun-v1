@@ -7,7 +7,9 @@ path: "/blog/friend-finder"
 
 # Friend finder
 
-Friend finder is a simple web app to showcase using ExpressJS to create the middleware needed to handle routing in a web application. The application will allow the user to fill a simple survey and based on the answers provided, match him/her with one of the previous survey responders, by computing how close their "scores" are.
+Friend finder is a simple web app to showcase using ExpressJS to create the middleware needed to handle routing in a web 
+application. The application will allow the user to fill a simple survey and based on the answers provided, match him/her
+with one of the previous survey responders, by computing how close their "scores" are.
 
 
 ### Technologies Used
