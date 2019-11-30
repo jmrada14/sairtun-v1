@@ -6,7 +6,7 @@ path: "/blog/liri-bot"
 ---
 
 # liri-bot
-A bot assistant that interacts with the Spotify, Twitter, MoDB API.
+A CLI bot assistant that interacts with the Spotify, Twitter, MoDB API.
 
 # How to install locally?
 * Run `git clone git@github.com:jmrada14/liri-bot.git`

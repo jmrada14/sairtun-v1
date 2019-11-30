@@ -23,4 +23,4 @@ path: "/blog/project2"
 
 The app is still under development, but this is how the back looks. 
 
-![](https://youtu.be/L1lBbNNcq8M)
+[demo](https://youtu.be/L1lBbNNcq8M)

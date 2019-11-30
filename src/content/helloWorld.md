@@ -24,5 +24,7 @@ by imagination.
 #### Contact me
 
 Email: jmrada14@tutanota.com - jmrada14@gmail.com 
+-
 [GitHub](https://github.com/jmrada14/)
+-
 [LinkedIn](https://www.linkedin.com/in/juan-rada-4b997b190/)
