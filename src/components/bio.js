@@ -57,8 +57,7 @@ const Description = styled.p`
 const NameHeader = styled.h1`
   font-size: 4.5rem;
   margin-bottom: 0;
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
-  color: transparent;
+  color: #eba134;
 `;
 const HelloThere = styled.p`
   padding: 0;
@@ -85,7 +84,9 @@ const Bio = () => (
                     <br/>
                     <HelloThere> Hello there! </HelloThere>
                     <Description>  <br/>
-                        —  I'm Juan, a Full Stack Developer who focuses on writing secure, clean, and efficient code to help society.
+                        —  I'm Juan, an enthusiastic Software Developer, who spend most of his time programming in Ruby
+                        and Node.js. I'm constantly forward the enrichment of my knowledge and the exploration of new
+                        technologies.
                         <br/><br/>
                         I have experience with Ruby <DiRuby/>, ES6 <DiNodejsSmall/>, R, and several libraries & frameworks
                         including: Ruby on Rails <DiRor/>, ExpressJS <FaServer/>, Laravel <DiLaravel/>, React <DiReact/>,
