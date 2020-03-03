@@ -7,8 +7,6 @@ import {
   DiRuby,
   DiNodejsSmall,
   DiMongodb,
-  DiRor,
-  DiLaravel,
   DiReact,
   DiMysql,
 } from "react-icons/di"
@@ -89,12 +87,12 @@ const Bio = () => (
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
           <br />
-          <HelloThere> Hi there! </HelloThere>
+          <HelloThere> <strong>Hi there!</strong> </HelloThere>
           <Description>
             {" "}
             <br />
-            — I'm Juan, an enthusiastic Software Developer, who spend most of
-            his time programming in Node.js and Ruby. I'm constantly forward the
+            — I'm Juan, an enthusiastic Software Developer, who spends most of
+            his time programming in Node.js and Ruby. I'm constantly forwarding the
             enrichment of my knowledge and the exploration of new technologies.
             <br />
             <br />
