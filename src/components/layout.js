@@ -21,6 +21,10 @@ const Content = styled.div`
   padding-top: 0;
   border-radius: 5px;
   color: #fff;
+<<<<<<< HEAD
+=======
+   
+>>>>>>> 66c58133d241225175ef6b95a72255f225643602
 `
 
 const Footer = styled.footer`
