@@ -9,8 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
-import { DiGithubBadge } from "react-icons/di"
-import { FaLinkedin } from "react-icons/fa"
 import Header from "./header"
 import "./layout.css"
 
@@ -72,15 +70,15 @@ const Layout = ({ children }) => (
           <Footer>
             <Linky href="https://github.com/jmrada14" target="_blank">
               {" "}
-              <DiGithubBadge size={40} />{" "}
+              <img src="https://img.icons8.com/dusk/64/000000/github.png"/>
             </Linky>
-
+            <a href="https://icons8.com/icon/46565/github"></a>
             <Linky
               href="https://www.linkedin.com/in/juan-rada-4b997b190/"
               target="_blank"
             >
               {" "}
-              <FaLinkedin size={40} />{" "}
+              <img src="https://img.icons8.com/dusk/64/000000/linkedin.png"/>
             </Linky>
           </Footer>
         </Content>
