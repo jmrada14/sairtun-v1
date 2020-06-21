@@ -9,7 +9,7 @@ path: "/blog/brfssdataanalysis"
 This was the final project for the introduction to probability course by Duke University.
 The goal of this project was to understand the foundations of R using Rstudio. 
 
-![Some nice charts with Ggplot2](https://cdn1.imggmi.com/uploads/2019/10/21/fa74c83610f5bd5073a8479924447158-full.png)
+[Some nice charts with Ggplot2](https://cdn1.imggmi.com/uploads/2019/10/21/fa74c83610f5bd5073a8479924447158-full.png)
 
 ### About the data   
 

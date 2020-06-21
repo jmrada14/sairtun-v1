@@ -8,12 +8,13 @@ const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
   padding: 1.45rem 1.0875rem;
+  color: #606060;
 `
 
 const MarkedHeader = styled.h1`
   display: inline;
   border-radius: 1em 0 1em 0;
-  background-image: linear-gradient(-10deg, #eba134, #eba134 100%, #eba134);
+  background-image: linear-gradient(-50deg, #ffd4e1, #ed7272 100%, #ed7272);
 `
 
 const HeaderDate = styled.h3`
@@ -36,7 +37,7 @@ const MarkdownContent = styled.div`
     right: -0.1px;
     bottom: 0;
     transition: top 0.1s ease-in-out;
-    background-color: rgb(107, 199, 122);
+    background-color: rgb(186, 156, 156);
   }
   a:hover::after {
     top: 0;

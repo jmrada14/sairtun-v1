@@ -31,7 +31,7 @@ const ReadingTime = styled.h5`
 const NameHeader = styled.h1`
   font-size: 3rem;
   margin-bottom: 4;
-  color: #ed7272;
+  color: #606060;
   
   
 `

@@ -26,16 +26,23 @@ const OuterContainer = styled.div`
 `
 
 const Description = styled.p`
-  padding: 0;
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  color: #615e5a;
-`
-
-const NameHeader = styled.h1`
-  font-size: 4.5rem;
-  margin-bottom: 0;
   color: #ed7272;
+  font-size: 24px; 
+  font-weight: 300; 
+  line-height: 32px; 
+  margin: 0 auto;
+  padding: 1.45rem 1.0875rem;
+  width: 580px;
+  text-align: left; 
+  text-indent: 10px;
+
+`
+const NameHeader = styled.h1`
+  font-size: 3rem;
+  margin-bottom: -5px;
+  color: #606060;
+  
+  
 `
 
 const Bio = () => (
@@ -48,12 +55,13 @@ const Bio = () => (
           }
         }
       }
-    `}
+    `
+    }
+
     render={data => (
       <OuterContainer>
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-          <br />
           <Description>
             {" "}
             <br />
