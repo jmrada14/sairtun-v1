@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   margin: 0 auto;
   max-width: auto;
   color: #fff;
-  background-color: #f7ebf4;
+  /* background-color: #f7ebf4; */
 `
 
 const IndexPage = ({ data }) => {
