@@ -10,22 +10,42 @@ const Skills = () => {
 
   return (
     <>
-      <Button id="myBtn3" style={{borderRadius: "20px",fontFamily: "Bebas Neue', cursive"}}  size="sm" onClick={handleShow} variant="outline-secondary">Skills</Button>
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal>
-    </>
+    <Button
+      id="myBtn3"
+      style={{ borderRadius: "20px", fontFamily: "Bebas Neue'" }}
+      size="sm"
+      onClick={handleShow}
+      variant="outline-secondary"
+    >
+      Skills
+    </Button>
+    <Modal show={show} onHide={handleClose}>
+      <Modal.Header closeButton>
+        <Modal.Title>Skills</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+      <div align="center">
+      <img src="https://img.icons8.com/dusk/64/000000/javascript.png"/>
+      <img src="https://img.icons8.com/dusk/64/000000/react.png"/>
+      <img src="https://img.icons8.com/dusk/64/000000/ruby-programming-language.png"/>
+      <img src="https://img.icons8.com/dusk/64/000000/css3.png"/>
+      <img src="https://img.icons8.com/dusk/64/000000/database.png"/>
+      <img src="https://img.icons8.com/dusk/64/000000/server.png"/>
+      </div>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button
+          id="myBtn3"
+          style={{ borderRadius: "20px", fontFamily: "Bebas Neue'" }}
+          size="sm"
+          variant="secondary"
+          onClick={handleClose}
+        >
+          Close
+        </Button>
+      </Modal.Footer>
+    </Modal>
+  </>
   );
 };
 

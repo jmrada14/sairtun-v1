@@ -49,7 +49,7 @@ const IndexPage = ({ data }) => {
                   text-decoration: none;
                   color: inherit;
                   :hover {
-                    color: #606060;
+                    color: #7a3687;
                     text-decoration: none;
                     cursor: pointer;
                   }
