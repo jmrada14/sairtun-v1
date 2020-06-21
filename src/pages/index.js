@@ -22,7 +22,7 @@ const ArticleDate = styled.h5`
 const MarkerHeader = styled.h3`
   display: inline;
   border-radius: 1em 0 1em 0;
-  background-image: linear-gradient(-80deg, #ffdee8, #ffdee8 5%, #fafafa);
+  background-image: linear-gradient(#ffdee8, #ffdee8 1%, #fafafa);
 `
 
 const ReadingTime = styled.h5`

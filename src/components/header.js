@@ -17,7 +17,7 @@ const Content = styled.div`
 
 const NavLink = styled(Link)`
   color: #ed7272;
-  font-size:2.8rem;
+  font-size:3.8rem;
   font-family: 'Bebas Neue';
   margin-left: 15px;
   text-decoration: none;
@@ -42,7 +42,6 @@ const SiteHeader = styled.header`
 const Header = ({ siteTitle }) => (
   <SiteHeader>
     <Content><div>
-    <img src="https://img.icons8.com/dusk/70/000000/react.png"/>{" "}
     <NavLink to="/">{siteTitle}</NavLink>
     </div>
        <div align="center">
