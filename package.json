@@ -8,6 +8,7 @@
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.11",
     "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.5.0",
     "gatsby": "^2.18.22",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-emotion": "^4.0.7",
@@ -27,6 +28,7 @@
     "prismjs": "^1.16.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.8.0",
@@ -35,13 +37,15 @@
   },
   "devDependencies": {
     "components": "^0.1.0",
-    "eslint": "^7.3.0",
+    "eslint": "^7.2.0",
     "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.4",
-    "prettier": "^1.17.1",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "prettier": "^1.19.1",
     "styles": "^0.2.1"
   },
   "keywords": [
@@ -56,7 +60,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "prettier": "prettier --write src/**/*.{js,jsx}",
-    "eslint": "eslint",
+    "eslint": "eslint . --ext .js,.jsx",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""

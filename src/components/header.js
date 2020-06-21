@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import PropTypes from "prop-types"
 import React from "react"
+import "./header.css"
 
 const Content = styled.div`
   max-width: 860px;
@@ -12,7 +13,7 @@ const Content = styled.div`
 
 const NavLink = styled(Link)`
   color: #ed7272;
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -37,7 +38,7 @@ const NavLink = styled(Link)`
 
 const HomeLink = styled(NavLink)`
   margin-left: 0;
-  color: #ed7272;
+  color: #606060;
 `
 
 const SiteHeader = styled.header`
@@ -52,8 +53,12 @@ const Header = ({ siteTitle }) => (
     <Content>
       <p>
         <HomeLink to="/">{siteTitle}</HomeLink>
-        <NavLink to="/blog">Blog & Works</NavLink>
-      </p>
+       </p>
+       <div align="center">
+       <button href="something" className="button4" style={{backgroundColor:"#ed7272"}} > About me</button>
+       <div className="divider"/>
+       <button href="something" className="button4" style={{backgroundColor:"#ed7272"}} > Get in touch</button>
+       </div>
     </Content>
   </SiteHeader>
 )

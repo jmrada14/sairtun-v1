@@ -25,15 +25,8 @@ const Content = styled.div`
     background: -o-linear-gradient(110deg, #fff7fd 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #f7ebf4 70%, #fff7fd 70%);
     background: -moz-linear-gradient(110deg, #fff7fd 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #f7ebf4 70%, #fff7fd 70%);
     background: linear-gradient(110deg, #fff7fd 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #f7ebf4 70%, #fff7fd 70%);
-}
 
-.bg-spring {
-    background: -webkit-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
-    background: -o-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
-    background: -moz-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
-    background: linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
 `
-
 
 const Footer = styled.footer`
   display: flex;
@@ -76,6 +69,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
+        <br/>
         <Content>
           <main>{children}</main>
           <br />
