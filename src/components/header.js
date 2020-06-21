@@ -7,11 +7,12 @@ const Content = styled.div`
   max-width: 860px;
   padding: 1rem 1.0875rem;
   font-size: 1.2rem;
-    color: #615e5a;  
+  color: #615e5a;
 `
 
 const NavLink = styled(Link)`
-  color: #615e5a;  
+  color: #ed7272;
+  font-size: 1.5rem;
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -21,10 +22,10 @@ const NavLink = styled(Link)`
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 3px;
     bottom: 0;
     left: 0;
-    background-color:  rgb(107, 199, 122);
+    background-color: rgb(186, 156, 156);
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -34,10 +35,9 @@ const NavLink = styled(Link)`
   }
 `
 
-
 const HomeLink = styled(NavLink)`
   margin-left: 0;
-  color: #615e5a;  
+  color: #ed7272;
 `
 
 const SiteHeader = styled.header`
@@ -48,22 +48,22 @@ const SiteHeader = styled.header`
 `
 
 const Header = ({ siteTitle }) => (
-    <SiteHeader>
-      <Content>
-        <p>
-          <HomeLink to="/">{siteTitle}</HomeLink>
-            <NavLink to="/blog">Blog & Works</NavLink>
-        </p>
-      </Content>
-    </SiteHeader>
-);
+  <SiteHeader>
+    <Content>
+      <p>
+        <HomeLink to="/">{siteTitle}</HomeLink>
+        <NavLink to="/blog">Blog & Works</NavLink>
+      </p>
+    </Content>
+  </SiteHeader>
+)
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-};
+}
 
 Header.defaultProps = {
   siteTitle: ``,
-};
+}
 
 export default Header

@@ -9,6 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
+import { DiGithubBadge } from "react-icons/di"
+import { FaLinkedin } from "react-icons/fa"
 import Header from "./header"
 import "./layout.css"
 
@@ -17,11 +19,28 @@ const Content = styled.div`
   max-width: 860px;
   padding: 0 1.0875rem 1rem;
   padding-top: 0;
+  border-radius: 5px;
+  color: #fff;
+    background: -webkit-linear-gradient(110deg, #fff7fd 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #f7ebf4 70%, #fff7fd 70%);
+    background: -o-linear-gradient(110deg, #fff7fd 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #f7ebf4 70%, #fff7fd 70%);
+    background: -moz-linear-gradient(110deg, #fff7fd 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #f7ebf4 70%, #fff7fd 70%);
+    background: linear-gradient(110deg, #fff7fd 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #f7ebf4 70%, #fff7fd 70%);
+}
+
+.bg-spring {
+    background: -webkit-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+    background: -o-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+    background: -moz-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+    background: linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
 `
 
-const ResumeLink = styled.a`
+
+const Footer = styled.footer`
+  display: flex;
+  justify-content: center;
+`
+const Linky = styled.a`
   color: #615e5a;
-  font-size: 1.5rem;
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -34,7 +53,7 @@ const ResumeLink = styled.a`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color:  rgb(107, 199, 122);
+    background-color: rgb(186, 156, 156);
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -43,14 +62,9 @@ const ResumeLink = styled.a`
     transform-origin: bottom left;
   }
 `
-const Footer = styled.footer`
-  display: flex;
-  justify-content: center;
-`
-
 const Layout = ({ children }) => (
-    <StaticQuery
-        query={graphql`
+  <StaticQuery
+    query={graphql`
       query SiteTitleQuery {
         site {
           siteMetadata {
@@ -59,23 +73,34 @@ const Layout = ({ children }) => (
         }
       }
     `}
-        render={data => (
-            <>
-                <Header siteTitle={data.site.siteMetadata.title} />
-                <Content>
-                    <main>{children}</main>
-                    <br/>
-                    <Footer>
-                        <ResumeLink href="https://drive.google.com/file/d/1xdhdC60Jw8ndy5PLX1Uy_QFF8j8nayY0/view?usp=sharing" target="_blank">Resume</ResumeLink>
-                    </Footer>
-                </Content>
-            </>
-        )}
-    />
+    render={data => (
+      <>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <Content>
+          <main>{children}</main>
+          <br />
+          <Footer>
+            <Linky href="https://github.com/jmrada14" target="_blank">
+              {" "}
+              <DiGithubBadge size={40} />{" "}
+            </Linky>
+
+            <Linky
+              href="https://www.linkedin.com/in/juan-rada-4b997b190/"
+              target="_blank"
+            >
+              {" "}
+              <FaLinkedin size={40} />{" "}
+            </Linky>
+          </Footer>
+        </Content>
+      </>
+    )}
+  />
 )
 
 Layout.propTypes = {
-    children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout

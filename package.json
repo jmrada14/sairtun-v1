@@ -35,24 +35,35 @@
   },
   "devDependencies": {
     "components": "^0.1.0",
+    "eslint": "^7.3.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
     "prettier": "^1.17.1",
     "styles": "^0.2.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "node.js",
+    "react",
+    "web development",
+    "blog"
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "prettier": "prettier --write src/**/*.{js,jsx}",
+    "eslint": "eslint",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/jmrada14/sairtun-v1"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

@@ -13,12 +13,7 @@ const Content = styled.div`
 const MarkedHeader = styled.h1`
   display: inline;
   border-radius: 1em 0 1em 0;
-  background-image: linear-gradient(
-    -10deg,
-    #eba134,
-    #eba134 100%,
-    #eba134
-  );
+  background-image: linear-gradient(-10deg, #eba134, #eba134 100%, #eba134);
 `
 
 const HeaderDate = styled.h3`
@@ -49,22 +44,22 @@ const MarkdownContent = styled.div`
 `
 
 export default ({ data }) => {
-    const post = data.markdownRemark
-    return (
-        <Layout>
-            <SEO
-                title={post.frontmatter.title}
-                description={post.frontmatter.description || post.excerpt}
-            />
-            <Content>
-                <MarkedHeader>{post.frontmatter.title}</MarkedHeader>
-                <HeaderDate>
-                    {post.frontmatter.date} - {post.fields.readingTime.text}
-                </HeaderDate>
-                <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
-            </Content>
-        </Layout>
-    )
+  const post = data.markdownRemark
+  return (
+    <Layout>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt}
+      />
+      <Content>
+        <MarkedHeader>{post.frontmatter.title}</MarkedHeader>
+        <HeaderDate>
+          {post.frontmatter.date} - {post.fields.readingTime.text}
+        </HeaderDate>
+        <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
+      </Content>
+    </Layout>
+  )
 }
 
 export const pageQuery = graphql`

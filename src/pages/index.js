@@ -5,10 +5,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-    <Layout>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`, 'blog']} />
-        <Bio />
-    </Layout>
+  <div style={{backgroundColor:" #fafafa"}}>
+  <Layout>
+    <SEO title="Home" keywords={[`gatsby`, `application`, `react`, "blog"]} />
+    <Bio />
+  </Layout>
+  </div>
 )
 
 export default IndexPage
