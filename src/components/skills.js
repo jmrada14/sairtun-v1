@@ -1,5 +1,6 @@
 import React from 'react';
 import {Modal, Button} from "react-bootstrap"
+import "./customModal.css"
 
 const Skills = () => {
     const [show, setShow] = React.useState(false);
@@ -9,7 +10,7 @@ const Skills = () => {
 
   return (
     <>
-      <Button style={{borderRadius: "20px"}} size="sm" onClick={handleShow} variant="outline-secondary">Skills</Button>
+      <Button id="myBtn3" style={{borderRadius: "20px",fontFamily: "Bebas Neue', cursive"}}  size="sm" onClick={handleShow} variant="outline-secondary">Skills</Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>

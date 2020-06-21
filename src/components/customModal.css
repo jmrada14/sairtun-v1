@@ -1,0 +1,30 @@
+#myBtn1{
+    text-decoration: none;
+}
+#myBtn1:hover 
+{
+     background-color:#ed7272; 
+     text-decoration:none; 
+     cursor:pointer;
+     color: #fff;  
+}
+#myBtn2{
+    text-decoration: none;
+}
+#myBtn2:hover 
+{
+     background-color:#f0f763; 
+     text-decoration:none; 
+     cursor:pointer;
+     color: #606060;  
+}
+#myBtn3{
+    text-decoration: none;
+}
+#myBtn3:hover 
+{
+     background-color:#94f7af; 
+     text-decoration:none; 
+     cursor:pointer;
+     color: #606060;  
+}

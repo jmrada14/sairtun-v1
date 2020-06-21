@@ -21,10 +21,6 @@ const Content = styled.div`
   padding-top: 0;
   border-radius: 5px;
   color: #fff;
-<<<<<<< HEAD
-=======
-   
->>>>>>> 66c58133d241225175ef6b95a72255f225643602
 `
 
 const Footer = styled.footer`
@@ -45,13 +41,16 @@ const Linky = styled.a`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgb(186, 156, 156);
+    background-color: #ed7272;
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
   :hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+    color:#ed7272; 
+     text-decoration:none; 
+     cursor:pointer;  
   }
 `
 const Layout = ({ children }) => (
@@ -68,10 +67,8 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <br/>
         <Content>
           <main>{children}</main>
-          <br />
           <Footer>
             <Linky href="https://github.com/jmrada14" target="_blank">
               {" "}

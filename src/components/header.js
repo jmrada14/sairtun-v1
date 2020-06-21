@@ -17,13 +17,19 @@ const Content = styled.div`
 
 const NavLink = styled(Link)`
   color: #ed7272;
-  font-size: 3rem;
+  font-size: 3.2rem;
+  font-family: 'Bebas Neue', cursive;
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
   position: relative;
   margin-left: 0;
   color: #606060;
+  :hover{
+    color:#ed7272; 
+     text-decoration:none; 
+     cursor:pointer;  
+  }
 `
 
 const SiteHeader = styled.header`
