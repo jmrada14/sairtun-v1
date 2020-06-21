@@ -37,7 +37,7 @@ const SiteHeader = styled.header`
 const Header = ({ siteTitle }) => (
   <SiteHeader>
     <Content><div>
-    <Image src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="img" roundedCircle />
+    <img src="https://img.icons8.com/clouds/100/000000/employee-card.png"/>
     <NavLink to="/">{siteTitle}</NavLink>
     </div>
        <div align="center">
