@@ -21,11 +21,7 @@ const Content = styled.div`
   padding-top: 0;
   border-radius: 5px;
   color: #fff;
-    background: -webkit-linear-gradient(110deg, #ffffff 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #f7ebf4 70%, #ffffff 70%);
-    background: -o-linear-gradient(110deg, #ffffff 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #f7ebf4 70%, #ffffff 70%);
-    background: -moz-linear-gradient(110deg, #ffffff 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #f7ebf4 70%, #ffffff 70%);
-    background: linear-gradient(110deg, #ffffff 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #f7ebf4 70%, #ffffff 70%);
-
+   
 `
 
 const Footer = styled.footer`
