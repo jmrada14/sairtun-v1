@@ -1,7 +1,7 @@
 import React from 'react';
 import {Modal, Button} from "react-bootstrap"
 
-const ContactMe = () => {
+const Skills = () => {
     const [show, setShow] = React.useState(false);
 
   const handleClose = () => setShow(false);
@@ -9,7 +9,7 @@ const ContactMe = () => {
 
   return (
     <>
-      <Button style={{borderRadius: "20px"}} size="sm" onClick={handleShow} variant="outline-secondary">Get in touch</Button>
+      <Button style={{borderRadius: "20px"}} size="sm" onClick={handleShow} variant="outline-secondary">Skills</Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
@@ -28,4 +28,4 @@ const ContactMe = () => {
   );
 };
 
-export default ContactMe;
+export default Skills;

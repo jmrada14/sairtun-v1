@@ -2,8 +2,10 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import PropTypes from "prop-types"
 import React from "react"
-import AboutMe from "../components/aboutMe"
+import {Image} from "react-bootstrap"
+import AboutMe from "./aboutMe"
 import ContactMe from "./contact"
+import Skills from "./skills"
 
 
 const Content = styled.div`
@@ -21,25 +23,6 @@ const NavLink = styled(Link)`
   text-decoration: none;
   display: inline-block;
   position: relative;
-  ::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(186, 156, 156);
-    transform-origin: bottom right;
-    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-  }
-  :hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-`
-
-const HomeLink = styled(NavLink)`
   margin-left: 0;
   color: #606060;
 `
@@ -53,14 +36,16 @@ const SiteHeader = styled.header`
 
 const Header = ({ siteTitle }) => (
   <SiteHeader>
-    <Content>
-      <p>
-        <HomeLink to="/">{siteTitle}</HomeLink>
-       </p>
+    <Content><div>
+    <Image src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="img" roundedCircle />
+    <NavLink to="/">{siteTitle}</NavLink>
+    </div>
        <div align="center">
        <AboutMe/>
        {' '}
        <ContactMe/>
+       {' '}
+       <Skills/>
        </div>
     </Content>
   </SiteHeader>

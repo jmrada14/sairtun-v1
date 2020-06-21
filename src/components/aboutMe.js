@@ -9,7 +9,7 @@ const AboutMe = () => {
 
   return (
     <>
-      <Button size="sm" onClick={handleShow} variant="outline-secondary">About me</Button>
+      <Button style={{borderRadius: "20px"}} size="sm" onClick={handleShow} variant="outline-secondary">About me</Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
