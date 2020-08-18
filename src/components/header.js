@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 import PropTypes from "prop-types"
 import React from "react"
 import AboutMe from "./aboutMe"
-import Skills from "./skills"
+
 
 
 const Content = styled.div`
@@ -46,7 +46,6 @@ const Header = ({ siteTitle }) => (
        <div align="center">
        <AboutMe/>
        {' '}
-       <Skills/>
        </div>
     </Content>
   </SiteHeader>
