@@ -14,7 +14,7 @@ La privacidad es aquello que el ser humano lleva a cabo en un ámbito reservado 
 
 ### ¿Por qué importa la privacidad?
 
-_El información es poder_, la información sobre ti es poder en tu contra. Tu información puede ser usada para anticipar tu comportamiento, influenciar tus decisiones, e incluso manipular la forma en la que piensas.
+_La información es poder_, la información sobre ti es poder en tu contra. Tu información puede ser usada para anticipar tu comportamiento, influenciar tus decisiones, e incluso manipular la forma en la que piensas.
 
 Tu privacidad importa porque protege tu información contra adversarios. Dichos dversarios podrian usar esta información fuera de contexto para juzgarte, difamarte, e incluso incriminarte.
 
