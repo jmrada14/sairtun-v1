@@ -2,9 +2,6 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import PropTypes from "prop-types"
 import React from "react"
-import AboutMe from "./aboutMe"
-
-
 
 const Content = styled.div`
   max-width: 860px;
@@ -16,18 +13,18 @@ const Content = styled.div`
 
 const NavLink = styled(Link)`
   color: #ed7272;
-  font-size:3.8rem;
-  font-family: 'Bebas Neue';
+  font-size: 3.8rem;
+  font-family: "Bebas Neue";
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
   position: relative;
   margin-left: 0;
   color: #606060;
-  :hover{
-    color:#ed7272; 
-     text-decoration:none; 
-     cursor:pointer;  
+  :hover {
+    color: #ed7272;
+    text-decoration: none;
+    cursor: pointer;
   }
 `
 
@@ -40,13 +37,11 @@ const SiteHeader = styled.header`
 
 const Header = ({ siteTitle }) => (
   <SiteHeader>
-    <Content><div>
-    <NavLink to="/">{siteTitle}</NavLink>
-    </div>
-       <div align="center">
-       <AboutMe/>
-       {' '}
-       </div>
+    <Content>
+      <div>
+        <br />
+        <NavLink to="/">{siteTitle}</NavLink>
+      </div>
     </Content>
   </SiteHeader>
 )
